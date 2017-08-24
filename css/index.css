@@ -1,0 +1,6 @@
+@media screen and (min-width: 768px) {
+    .navbar-nav>li{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
