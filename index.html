@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HanzhouTang</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <!--[if lt IE 9]>
@@ -14,7 +15,7 @@
     <![endif]-->
 </head>
 <body>
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -31,9 +32,67 @@
             <li class="nav-item" >
                 <a class="nav-link disabled" href="#">日志</a>
             </li>
+            <li class="nav-item" >
+                <a class="nav-link disabled" href="#">OJ</a>
+            </li>
         </ul>
     </div>
 </nav>
+<div class="container-fluid">
+    <div class="row introduction-odd" >
+        <div class="col-sm-3 text-center">
+            <img src="img/paranoid.jpg" class="left-float">
+        </div>
+        <div class="col-sm-3">
+            <h2>焦虑</h2>
+            <p>容易感到紧张和焦虑，面对新鲜事物时会比较沮丧，但有时也是前进的动力</p>
+        </div>
+        <div class="col-sm-3" style="padding-left: 5%;">
+            <h2 style="text-align: right;">坚定</h2>
+            <p>排除一切问题，向目标进发</p>
+        </div>
+        <div class="col-sm-3 text-center">
+            <img src="img/persistence.jpg" class="right-float" >
+        </div>
+    </div>
+
+    <div class="row introduction-even" >
+        <div class="col-sm-3 push-lg-6" style="padding-left: 5%;">
+            <h2 style="text-align: right;">踌躇</h2>
+            <p>做事犹豫，难下决心，常常拖到最后，让<strong>deadline</strong>告诉我要做什么</p>
+        </div>
+        <div class="col-sm-3 text-center push-lg-6">
+            <img src="img/hesitation.jpg" class="right-float">
+        </div>
+        <div class="col-sm-3 text-center pull-lg-6">
+            <img src="img/concenteation.jpg" class="left-float" >
+        </div>
+        <div class="col-sm-3 pull-lg-6">
+            <h2>专注</h2>
+            <p>聚精会神，再小的问题也不会放过</p>
+        </div>
+    </div>
+
+    <div class="row introduction-odd" >
+        <div class="col-sm-3 text-center">
+            <img src="img/diffidence.jpg"  class="left-float">
+        </div>
+        <div class="col-sm-3">
+            <h2>缺乏自信</h2>
+            <p>常常陷入自我怀疑，对事物的发展持悲观态度</p>
+        </div>
+        <div class="col-sm-3" style="padding-left: 5%;">
+            <h2 style="text-align: right;">理智</h2>
+            <p>有对人生的规划，必要时可以克服对未知的恐惧</p>
+        </div>
+        <div class="col-sm-3 text-center">
+            <img src="img/calm.jpg" class="right-float" >
+        </div>
+    </div>
+
+    
+
+</div>
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,57 @@
+html{
+    height:100%;
+}
+body{
+    margin-top: 56px;
+    height: 100%;
+}
+
+.right-float,.left-float{
+    float: none;
+}
+
+.introduction-odd>div:nth-child(-n+3){
+    color:black;
+    background-color: #4b5257;
+}
+.introduction-odd>div:nth-child(n+3){
+    background-color:#bcdff1;
+    color:#01549b;
+}
+
+
+
+.introduction-even>div:nth-child(-n+3){
+    color:black;
+    background-color: #4b5257;
+}
+.introduction-even>div:nth-child(n+3){
+
+    background-color:#bcdff1;
+    color:#01549b;
+}
+
+.introduction-odd img,.introduction-even img{
+    height: 100%;
+    border-radius: 100%;
+}
+
 @media screen and (min-width: 768px) {
     .navbar-nav>li{
         padding-left: 60px;
         padding-right: 60px;
     }
+    .introduction-even ,.introduction-odd{
+        height:34vh;
+    }
+    .right-float{
+        float: right;
+    }
+    .left-float{
+        float: left;
+    }
+
+
+
+
 }
