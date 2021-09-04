@@ -1,5 +1,5 @@
 function parseCondition(condition) {
-
+    console.log("condition is ",condition);
     const conditions = [];
     const length = condition.length;
     const stack = [];

@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="やり直すんだ。そして、次はうまくやる。"/>
-    <meta name="keywords" content="人生重开模拟器 liferestart life restart remake 人生重来"/>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="やり直すんだ。そして、次はうまくやる。" />
+    <meta
+      name="keywords"
+      content="人生重开模拟器 liferestart life restart remake 人生重来"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../public/bundle.js"></script>
     <title>Life Restart</title>
-</head>
-<body style="margin: 0; height: 95%">
-</body>
+  </head>
+  <body style="margin: 0; height: 95%">
+    <div class="banners-container">
+      <div class="banners">
+        <div class="banner error">
+          <div class="banner-icon"><span class="iconfont">&#xe6a1;</span></div>
+          <pre class="banner-message">Oops! Something went wrong!</pre>
+          <div class="banner-close" onclick="hideBanners()">
+            <span class="iconfont">&#xe6a8;</span>
+          </div>
+        </div>
+        <div class="banner success">
+          <div class="banner-icon"><span class="iconfont">&#xe6a2;</span></div>
+          <pre class="banner-message">Everything was fine!</pre>
+          <div class="banner-close" onclick="hideBanners()">
+            <span class="iconfont">&#xe6a8;</span>
+          </div>
+        </div>
+        <div class="banner info">
+          <div class="banner-icon"><span class="iconfont">&#xe6a3;</span></div>
+          <pre class="banner-message">Here is some useful information</pre>
+          <div class="banner-close" onclick="hideBanners()">
+            <span class="iconfont">&#xe6a8;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
