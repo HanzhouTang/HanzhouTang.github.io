@@ -9,7 +9,7 @@ class App{
     #life;
     #pages;
     #talentSelected = new Set();
-    #totalMax=20;
+    #totalMax=23;
     #isEnd = false;
     #selectedExtendTalent = null;
     #hintTimeout;
@@ -117,7 +117,7 @@ class App{
                     this.hint('请选择3个天赋');
                     return;
                 }
-                this.#totalMax = 20 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
+                this.#totalMax = 23 + this.#life.getTalentAllocationAddition(Array.from(this.#talentSelected).map(({id})=>id));
                 this.switch('property');
             })
 
@@ -142,6 +142,7 @@ class App{
             return t;
         }
         const freshTotal = ()=>{
+            console.log('max ',this.#totalMax)
             propertyPage.find('#total').text(`可用属性点：${this.#totalMax - total()}`);
         }
         const getBtnGroups = (name, min, max)=>{
@@ -202,6 +203,7 @@ class App{
         propertyPage
             .find('#random')
             .click(()=>{
+                console.log('total max',this.#totalMax)
                 let t = this.#totalMax;
                 const arr = [10, 10, 10, 10];
                 while(t>0) {
@@ -310,7 +312,7 @@ class App{
                 this.#life.talentExtend(this.#selectedExtendTalent);
                 this.#selectedExtendTalent = null;
                 this.#talentSelected.clear();
-                this.#totalMax = 20;
+                this.#totalMax = 23;
                 this.#isEnd = false;
                 this.switch('index');
             });
@@ -348,7 +350,7 @@ class App{
                 clear: ()=>{
                     talentPage.find('ul.selectlist').empty();
                     talentPage.find('#random').show();
-                    this.#totalMax = 20;
+                    this.#totalMax = 23;
                 },
             },
             property: {
