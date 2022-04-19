@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HanzhouTang</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="margin: 0; height: 100%">
+    <nav
+      class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top py-0"
+    >
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>HT</strong>的博客</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >主页<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://leetcode.com/hanzhoutang/"
+              >LeetCode</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/hanzhoutang/"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <h1 class="code-line" data-line-start="0" data-line-end="1">
+        <a id="How_to_practice_Leetcode_for_2200_rating_0"></a>How to practice
+        Leetcode for 2200+ rating
+      </h1>
+      <p class="has-line-data" data-line-start="1" data-line-end="2">
+        I have done Lettcode for more than 4 years. As more and more practice,
+        my LC rating gradually increased to 2400+ in one month ago (though sadly
+        dropped to 2350+ recently). It seems like although many people ranked
+        much higher than me, the blogs related to self-practice are still very
+        limited. So I think it’s maybe a good time to share some experience. I
+        hope the blog could motivate anyone interested in LC and make
+        self-practice a little easier. The post is very limited to my own
+        experience and must not be the most effective strategy fitting for
+        everyone. If you think it’s helpful, I appreciate it. If you think it’s
+        very biased or nonsense, then definitely do practice in your way.
+      </p>
+      <p class="has-line-data" data-line-start="3" data-line-end="4">
+        The Article will consist of 6 parts below:
+      </p>
+      <ol>
+        <li class="has-line-data" data-line-start="4" data-line-end="5">
+          What is LC rating
+        </li>
+        <li class="has-line-data" data-line-start="5" data-line-end="6">
+          Does the LC rating matter to the job opportunity
+        </li>
+        <li class="has-line-data" data-line-start="6" data-line-end="7">
+          How to practice as a beginner
+        </li>
+        <li class="has-line-data" data-line-start="7" data-line-end="8">
+          How to practice for 1800 ~ 2200
+        </li>
+        <li class="has-line-data" data-line-start="8" data-line-end="9">
+          How to practice for 2200+
+        </li>
+        <li class="has-line-data" data-line-start="9" data-line-end="11">
+          Some really good readings and resources.
+        </li>
+      </ol>
+      <p class="has-line-data" data-line-start="11" data-line-end="12">
+        Let’s go over them one by one.
+      </p>
+      <h1 class="code-line" data-line-start="13" data-line-end="14">
+        <a id="What_is_LC_rating_13"></a>What is LC rating
+      </h1>
+      <p class="has-line-data" data-line-start="14" data-line-end="15">
+        Like many of the contest websites, LC follows the
+        <a href="https://en.wikipedia.org/wiki/Elo_rating_system">ELO system</a
+        >. LC rating is a good way to measure the ability to solve problems, the
+        higher the rating, the higher chance to solve a problem in a contest.
+      </p>
+      <p class="has-line-data" data-line-start="16" data-line-end="17">
+        Technically, problem rating is the rating of a hypothetical contestant
+        such that his/her expected rank equals the number of participants who
+        solved the problem. In practice, if you meet a problem whose rating is
+        equal to your rating, you are expected to solve it in half of your
+        contests (<a
+          href="https://codeforces.com/blog/entry/46304#:~:text=Technically%2C%20problem%20rating%20is%20the,in%20half%20of%20your%20contests"
+          >Reference</a
+        >).
+      </p>
+      <p class="has-line-data" data-line-start="18" data-line-end="19">
+        Thus rating is a good way to make self-practice more effective. Try to
+        start with problems close to your LC rating ([your rating - 200, your
+        rating + 200]), these problems could be good fits for you. Otherwise,
+        they’re either too easy or too hard.
+      </p>
+      <p class="has-line-data" data-line-start="20" data-line-end="21">
+        Unfortunately, LC doesn’t provide the official problem rating like some
+        other websites, for example, codeforce. However, the legendary LC player
+        <a href="https://leetcode-cn.com/u/zerotrac2/">@zerotrac</a> does
+        provide a LC rating list computed from each contest. Here is the
+        <a
+          href="https://github.com/zerotrac/leetcode_problem_rating/blob/gh-pages/ratings.txt"
+          >github link</a
+        >. The rating list is much more precise than LC official tags (easy,
+        medium, hard). As mentioned before, practice with problems close to your
+        rating may be a good approach.
+      </p>
+      <h1 class="code-line" data-line-start="22" data-line-end="23">
+        <a id="Does_LC_rating_matter_to_job_opportunities_22"></a>Does LC rating
+        matter to job opportunities?
+      </h1>
+      <p class="has-line-data" data-line-start="23" data-line-end="24">
+        I hope the answer could be “Yes”. However, unfortunately, from my
+        personal experience,
+        <strong
+          ><em
+            >the LC rating is not related to job opportunities very much</em
+          ></strong
+        >.
+      </p>
+      <p class="has-line-data" data-line-start="25" data-line-end="26">
+        There’re too many factors needed to find a good offer, for example, good
+        luck, algorithm skill, presentation skill, system design skill,
+        education background, interviewer, or even the weather. Algorithm skill
+        is only one of them, though it may be an important one. There’s no
+        guarantee or relationship like if I can make my rating higher than X,
+        then I can get an offer from company Y. You can get an offer from
+        company Y no matter what your LC rating is.
+      </p>
+      <p class="has-line-data" data-line-start="27" data-line-end="28">
+        But the good news is the higher your LC rating, the higher chance you
+        can impress your interviewer (If they asked for an algorithm solving
+        session, of course). The statistical data from another legendary player
+        <a href="https://leetcode.com/wisdompeak/">@wisdompeak</a> shows that
+        the median rating from SDEs who got an offer from FAANG company varies a
+        lot. The list below shows more details.<a
+          href="https://youtu.be/wDba6vqltE8?t=1491"
+          >source</a
+        >
+      </p>
+      <ol>
+        <li class="has-line-data" data-line-start="28" data-line-end="29">
+          Meta: 2100+
+        </li>
+        <li class="has-line-data" data-line-start="29" data-line-end="30">
+          Microsoft: 1900+
+        </li>
+        <li class="has-line-data" data-line-start="30" data-line-end="31">
+          Amazon: 1900+
+        </li>
+        <li class="has-line-data" data-line-start="31" data-line-end="32">
+          Google: 2100+
+        </li>
+        <li class="has-line-data" data-line-start="32" data-line-end="34">
+          Bytedance(Tiktok): 2200+
+        </li>
+      </ol>
+      <p class="has-line-data" data-line-start="34" data-line-end="35">
+        <strong
+          ><strong
+            >Please note, that the data above may be very biased.</strong
+          ></strong
+        >
+        The statistical data are collected from people who are very actively
+        practicing in LC and the number of samples is very limited. I believe
+        the rating mentioned above should be higher than practice. For example,
+        if we can ask every SDEs in Amazon to do leetcode contest, I believe the
+        median rating should be below 1900. Because as far as I know, most of
+        the SDEs in FAANG company are not practicing in LC very actively :)
+      </p>
+      <p class="has-line-data" data-line-start="36" data-line-end="37">
+        From my point of view, the data above are kinds like a good indicator or
+        the expectation from an interviewer. If you can reach the rating when
+        you are doing the interview, you can likely impress your interviewer.
+        But again,
+        <strong
+          ><em
+            >it’s only a chance, and algorithm skill is only one of many factors
+            to get a good offer</em
+          ></strong
+        >.
+      </p>
+      <h1 class="code-line" data-line-start="38" data-line-end="39">
+        <a id="How_to_practice_as_a_beginner_38"></a>How to practice as a
+        beginner
+      </h1>
+      <p class="has-line-data" data-line-start="39" data-line-end="40">
+        Although leetcode is much easier than some other OJ, for example,
+        codeforces. Most of the problems could be still tricky for beginners.
+      </p>
+      <p class="has-line-data" data-line-start="41" data-line-end="42">
+        I think for a beginner, the most important part is to be confident.
+        Every gain comes after a great amount of practice. If you want to
+        improve your skill, you have to spend some time. Even the most genius
+        person still needs to practice and he/she still unavoidably makes
+        mistakes.
+      </p>
+      <p class="has-line-data" data-line-start="43" data-line-end="44">
+        I think keeping a good mindset is the key for beginners. When I first
+        start leetcode, I often doubt my ability. Am I too stupid to solve the
+        problem? Is it something done wrong by my side? But after some practice,
+        I gradually become more and more comfortable with the problems. After I
+        solved about 400 problems (I often need to find solutions from
+        discussion of course), I can solve 60% ~ 70% of medium problems without
+        looking at the solution. I think my IQ doesn’t change over the period,
+        the key point is to practice and learn from others’ solutions.
+      </p>
+      <p class="has-line-data" data-line-start="45" data-line-end="46">
+        It’s totally fine to admit that some problem is a little too hard at the
+        current moment. If you cannot solve a problem at this time, it doesn’t
+        mean you’re not good at coding or you’re stupid. It only shows that
+        maybe you’re not familiar with some concepts or patterns. I think it
+        will be a good time to look at the solution, learn the concept, and
+        practice with some similar problems.
+        <strong
+          ><em
+            ><a href="https://github.com/wisdompeak/LeetCode">The list</a></em
+          ></strong
+        >
+        maintained by @wisdompeak is a good reference. You can always find
+        problems related to some specific topics from this list.
+      </p>
+      <p class="has-line-data" data-line-start="47" data-line-end="48">
+        And I think the 3 topics below are most crucial for beginners.
+      </p>
+      <ol>
+        <li class="has-line-data" data-line-start="48" data-line-end="56">
+          Basic data structure
+          <blockquote>
+            <p class="has-line-data" data-line-start="49" data-line-end="50">
+              Array/Vector, Queue, Stack, Linked List, Sorted Map/TreeMap,
+              UnSorted Map/HashMap, Priority Queue/Heap, Tree, Graph.
+            </p>
+            <p class="has-line-data" data-line-start="51" data-line-end="52">
+              You may need to know the implementation details of Linked List,
+              And you may need to know how to build a stack/queue from linked
+              list.
+            </p>
+            <p class="has-line-data" data-line-start="53" data-line-end="54">
+              For Sorted Map/TreeMap, UnSorted Map/HashMap, Priority Queue/Heap.
+              You need to be familiar with API provided by your programming
+              language.
+            </p>
+            <p class="has-line-data" data-line-start="55" data-line-end="56">
+              Most of the languages don’t support Tree and Graph natively. You
+              need to know how to represent Tree and Graph by yourself.
+            </p>
+          </blockquote>
+        </li>
+        <li class="has-line-data" data-line-start="56" data-line-end="62">
+          Recursion
+          <blockquote>
+            <p class="has-line-data" data-line-start="57" data-line-end="58">
+              You may need to know how recursion works. And what is the
+              relationship between recursion and stack. How to emulate a
+              recursion call by stack.
+            </p>
+            <p class="has-line-data" data-line-start="59" data-line-end="60">
+              You may need to know some classical Recursion algorithms. For
+              example, Quick Sort, Preorder Vist, Inorder Visit, Postorder
+              Vist， Euclidean Algorithm, and so on.
+            </p>
+            <p class="has-line-data" data-line-start="61" data-line-end="62">
+              You may need to know how to use the memoization technique to
+              implement Dynamic Programming in a top-down fashion. From my point
+              of view, I think coming up with a top-down DP solution is much
+              easier and more intuitive than traditional bottom-up DP.
+            </p>
+          </blockquote>
+        </li>
+        <li class="has-line-data" data-line-start="62" data-line-end="77">
+          Basic Algorithm Concept
+          <blockquote>
+            <p class="has-line-data" data-line-start="63" data-line-end="64">
+              <strong><em>Sort</em></strong> You may need to be familiar with
+              several sort algorithms. For example, Bubble Sort, Insert Sort,
+              Heap Sort, Merge Sort, and Quick Sort of course.
+            </p>
+            <p class="has-line-data" data-line-start="65" data-line-end="66">
+              <strong
+                ><em
+                  ><a href="https://en.wikipedia.org/wiki/Breadth-first_search"
+                    >Breadth First Search</a
+                  ></em
+                ></strong
+              >
+              You may need to know how to write a general BFS algorithm by
+              Queue. And you may need to know some basic applications of BFS,
+              for example, finding the shortest path in an unweighted graph.
+            </p>
+            <p class="has-line-data" data-line-start="67" data-line-end="68">
+              <strong
+                ><em
+                  ><a href="https://en.wikipedia.org/wiki/Depth-first_search"
+                    >Depth First Search</a
+                  ></em
+                ></strong
+              >
+              You may need to know how to write a general DFS algorithm by
+              Recursion. And you may need to know some basic applications of
+              DFS, for example, Preorder visit.
+            </p>
+            <p class="has-line-data" data-line-start="69" data-line-end="70">
+              <strong><em>Divide and Conquer</em></strong> This one is not very
+              common in Leetcode. If you’re not interested in. I think you can
+              skip this topic. But you may want to know how to implement
+              quicksort.
+            </p>
+            <p class="has-line-data" data-line-start="71" data-line-end="72">
+              <strong><em>Dynamic Programming</em></strong> This is a
+              notoriously well-known hard topic. The most difficult part is
+              recognizing the problem is a DP problem. You have to do a lot of
+              practice to get the intuition. I think we can start from the well
+              know one, for example. Longest Common Subsequence, Longest
+              Increasing Subsequence.
+            </p>
+            <p class="has-line-data" data-line-start="73" data-line-end="74">
+              <strong><em>Greedy</em></strong> From my point of view. I think
+              the greedy problem is the toughest one. You have to have good
+              intuition to resolve the greedy problem. And it’s commonly super
+              hard to prove if the greedy is correct. I am not good at greedy
+              problems at all. Luckily enough, there’re not very many greedy
+              problems in LC. We can start from the classical ones, for example,
+              Dijkstra and course schedule (The first example in Introduction to
+              Algorithms third edition, Chapter 16).
+            </p>
+            <p class="has-line-data" data-line-start="75" data-line-end="76">
+              <strong><em>Binary search</em></strong> You need to find a good
+              binary search template. And then the hard part becomes how to
+              identify the problem is actually can be solved by binary search.
+            </p>
+          </blockquote>
+        </li>
+      </ol>
+      <p class="has-line-data" data-line-start="77" data-line-end="78">
+        I know it’s a lot of concepts here. Luckily, most of them are related to
+        each other. For example, you don’t need to learn Divide and Conquer
+        independently. You can almost always learn Divide and Conquer with
+        Recursion together. And most of the algorithm concepts are related to
+        data structures very much, you can try to learn them together. For
+        example, how to visit a tree by DFS (Preorder visit) or in a BFS way.
+        (Level order visit)
+      </p>
+      <p class="has-line-data" data-line-start="79" data-line-end="80">
+        I believe if you can be familiar with all the concepts mentioned above.
+        You can at least reach a 1800+ rating. And it’s may enough for Amazon
+        interview from the statistical data shown before!
+      </p>
+      <h1 class="code-line" data-line-start="81" data-line-end="82">
+        <a id="How_to_practice_for_1800__2200_81"></a>How to practice for 1800 ~
+        2200
+      </h1>
+      <p class="has-line-data" data-line-start="82" data-line-end="83">
+        If the main reason to do leetcode is for seeking new opportunities, I
+        think it’s already a good time to start. At this moment, you should
+        already be familiar with most of the concepts mentioned above and should
+        be comfortable with most of the medium problems. From my point of view,
+        I think your algorithm skill should be good enough for most of the
+        normal SED roles.
+      </p>
+      <p class="has-line-data" data-line-start="84" data-line-end="85">
+        If you still want to pursue a breakthrough, then you may have to learn
+        some “advanced” topics which may rarely be used in routine development.
+        I think the 11 topics below may be helpful.
+      </p>
+      <ol>
+        <li class="has-line-data" data-line-start="85" data-line-end="86">
+          Difference Array
+        </li>
+        <li class="has-line-data" data-line-start="86" data-line-end="87">
+          BIT Tree (Fenwick Tree)
+        </li>
+        <li class="has-line-data" data-line-start="87" data-line-end="88">
+          Basic Math, such as the Sieve algorithm and inverse modular
+        </li>
+        <li class="has-line-data" data-line-start="88" data-line-end="89">
+          Trie
+        </li>
+        <li class="has-line-data" data-line-start="89" data-line-end="90">
+          Advance String Algorithms, such as KMP and Rolling Hash
+        </li>
+        <li class="has-line-data" data-line-start="90" data-line-end="91">
+          Monotonic Stack
+        </li>
+        <li class="has-line-data" data-line-start="91" data-line-end="92">
+          Sliding Window
+        </li>
+        <li class="has-line-data" data-line-start="92" data-line-end="93">
+          Bit Manipulation
+        </li>
+        <li class="has-line-data" data-line-start="93" data-line-end="94">
+          Union Set
+        </li>
+        <li class="has-line-data" data-line-start="94" data-line-end="95">
+          Bitmask DP
+        </li>
+        <li class="has-line-data" data-line-start="95" data-line-end="97">
+          Graph Algorithm, such as Floyd Algorithm, and Minimal Spanning Tree.
+        </li>
+      </ol>
+      <p class="has-line-data" data-line-start="97" data-line-end="98">
+        And of course, you have to practice more and be comfortable with most
+        (if not any) of medium problems. At this point, you should be able to
+        solve maybe half of the hard problems without looking into solutions. (I
+        am not sure, I may be wrong here. And the difficulties of hard problems
+        vary a lot). And you need to consider improving your typing speed if
+        that’s your bottleneck, I am not kidding.
+      </p>
+      <h1 class="code-line" data-line-start="99" data-line-end="100">
+        <a id="How_to_practice_for_2200_99"></a>How to practice for 2200+
+      </h1>
+      <p class="has-line-data" data-line-start="100" data-line-end="101">
+        Congratulation! If you can reach 2200+ in leetcode, you’re already the
+        top 2% players! It’s a big achievement, isn’t it?
+      </p>
+      <p class="has-line-data" data-line-start="102" data-line-end="103">
+        To be honest, I am struggling at this range as well. I have stayed at
+        the 2200+ rating for about 1 year and just reached 2350+ in very recent
+        months. I don’t think I can provide useful suggestions for people
+        already in this rating. But from my experience, I think if you still
+        want a breakthrough. Then maybe practice in Leetcode is not enough.
+        Currently, I start practice problems from Google Kickstart and Code Jam.
+        I do know some people with 2700+ ratings. Most of them had some
+        professional competitive programing training before. They’re genius and
+        focused, and some of them are top players in ICPC. I think if we want to
+        improve our rating. We have to be passionate, we have to be focused, and
+        we have to be confident. I hope I can reach 2600+ at the end of this
+        year. I hope it’s not too ambitious for me.
+      </p>
+      <h1 class="code-line" data-line-start="104" data-line-end="105">
+        <a id="Some_really_good_readings_and_resources_104"></a>Some really good
+        readings and resources
+      </h1>
+      <p class="has-line-data" data-line-start="105" data-line-end="106">
+        I think the below resources are helpful for anyone who treats Leetcode
+        seriously. Some of the readings are actually for professional-level
+        contests, don’t be frightened if you found some materials are very hard
+        to understand. I am struggling with these materials as well. LOL
+      </p>
+      <ol>
+        <li class="has-line-data" data-line-start="106" data-line-end="107">
+          <a href="https://jeffe.cs.illinois.edu/teaching/algorithms/"
+            >Algorithms by Jeff Erickson</a
+          >
+        </li>
+        <li class="has-line-data" data-line-start="107" data-line-end="108">
+          <a href="https://cpbook.net/">Competitive Programming</a> The book
+          covers most of the advanced topics in professional-level contests. I
+          highly recommend this book.
+        </li>
+        <li class="has-line-data" data-line-start="108" data-line-end="109">
+          <a href="https://oi-wiki.org/">The OI wiki</a> Chinese only, but you
+          can refer to #6 for English version.
+        </li>
+        <li class="has-line-data" data-line-start="109" data-line-end="110">
+          <a href="https://github.com/wisdompeak/LeetCode"
+            >Category list of each LC problem by wisdompeak</a
+          >
+        </li>
+        <li class="has-line-data" data-line-start="110" data-line-end="111">
+          <a
+            href="https://github.com/zerotrac/leetcode_problem_rating/blob/gh-pages/ratings.txt"
+            >Rating list of each LC problem by zerotrac</a
+          >
+        </li>
+        <li class="has-line-data" data-line-start="111" data-line-end="112">
+          <a href="https://cp-algorithms.com/index.html"
+            >Algorithms for Competitive Programming</a
+          >
+        </li>
+        <li class="has-line-data" data-line-start="112" data-line-end="113">
+          <a href="https://codeforces.com/">Code force</a> It’s hard, but some
+          blogs are super helpful. I didn’t practice it very much.
+        </li>
+        <li class="has-line-data" data-line-start="113" data-line-end="115">
+          <a href="https://codingcompetitions.withgoogle.com/kickstart"
+            >Google KickStart</a
+          >
+          I just started this one.
+        </li>
+      </ol>
+      <p class="has-line-data" data-line-start="115" data-line-end="116">
+        It’s a long blog than I originally expected. Keep practicing, and coding
+        is fun!!!
+      </p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
