@@ -1,4 +1,8 @@
 function parseCondition(condition) {
+    // it has been written in a very annoying way. 
+    // the idea algorithm should be recursive descent. 
+    // which should be much more elegant and easy to understand. 
+    // TODO refactor the whole file. 
     console.log("condition is ",condition);
     const conditions = [];
     const length = condition.length;
